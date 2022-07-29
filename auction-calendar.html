@@ -455,18 +455,220 @@
 				</div>
 
 				<table>
-					<thead
-						class="calendar-item calendar-nav d-flex justify-content-between align-items-center py-5"
-					>
+					<thead>
 						<tr>
-							<th>th</th>
-							<th>th</th>
-							<th>th</th>
-							<th>th</th>
-							<th>th</th>
-							<th>th</th>
+							<th>
+								<div class="calendar-search first-col">
+									<form action="#" class="form">
+										<button class="btn">
+											<svg class="icon icon-search1">
+												<use xlink:href="assets/img/icons.svg#icon-search"></use>
+											</svg>
+										</button>
+										<input type="text" placeholder="Type to search ..." class="input" />
+									</form>
+								</div>
+							</th>
+							<th>
+								<div class="calendar-state d-flex align-items-center">
+									<div class="arrow-btns d-flex flex-column align-items-center">
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+											</svg>
+										</button>
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+											</svg>
+										</button>
+									</div>
+									<span>State</span>
+								</div>
+							</th>
+							<th>
+								<div class="calendar-state d-flex align-items-center">
+									<div class="arrow-btns d-flex flex-column align-items-center">
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+											</svg>
+										</button>
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+											</svg>
+										</button>
+									</div>
+									<span>Region</span>
+								</div>
+							</th>
+							<th>
+								<div class="calendar-state d-flex align-items-center">
+									<div class="arrow-btns d-flex flex-column align-items-center">
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+											</svg>
+										</button>
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+											</svg>
+										</button>
+									</div>
+									<span>Vehicles</span>
+								</div>
+							</th>
+							<th>
+								<div class="calendar-state d-flex align-items-center">
+									<div class="arrow-btns d-flex flex-column align-items-center">
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+											</svg>
+										</button>
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+											</svg>
+										</button>
+									</div>
+									<span>Time</span>
+								</div>
+							</th>
+							<th>
+								<div class="calendar-state d-flex align-items-center">
+									<div class="arrow-btns d-flex flex-column align-items-center">
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+											</svg>
+										</button>
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+											</svg>
+										</button>
+									</div>
+									<span>date</span>
+								</div>
+							</th>
+							<th>
+								<div class="calendar-state d-flex align-items-center">
+									<div class="arrow-btns d-flex flex-column align-items-center">
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+											</svg>
+										</button>
+										<button class="btn">
+											<svg class="icon icon-keyboard_arrow_up">
+												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+											</svg>
+										</button>
+									</div>
+									<span>Status</span>
+								</div>
+							</th>
 						</tr>
 					</thead>
+					<tbody>
+						<tr>
+							<td data-column="First Name"><div class="calendar-title first-col">Hartford</div></td>
+							<td data-column="Last Name"><div class="calendar-state">CT</div></td>
+							<td data-column="Job Title"><div class="calendar-region">New England</div></td>
+							<td data-column="Twitter"><div class="calendar-vehicles">132 Vehicles</div></td>
+							<td data-column="Twitter"><div class="calendar-time">10:00 Pm GST</div></td>
+							<td data-column="Twitter"><div class="calendar-date">01/18/2021</div></td>
+							<td data-column="Twitter">
+								<div class="calendar-status">
+									<span>Past</span>
+									<button class="btn btn-dots">
+										<svg class="icon icon-dots-three-horizontal">
+											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td data-column="First Name">
+								<div class="calendar-title first-col">Washington</div>
+							</td>
+							<td data-column="Last Name"><div class="calendar-state">DC</div></td>
+							<td data-column="Job Title"><div class="calendar-region">Mid Atlantic</div></td>
+							<td data-column="Twitter"><div class="calendar-vehicles">456 Vehicles</div></td>
+							<td data-column="Twitter"><div class="calendar-time">10:00 Pm GST</div></td>
+							<td data-column="Twitter"><div class="calendar-date">01/21/2021</div></td>
+							<td data-column="Twitter">
+								<div class="calendar-status">
+									<span>Past</span>
+									<button class="btn btn-dots">
+										<svg class="icon icon-dots-three-horizontal">
+											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td data-column="First Name"><div class="calendar-title first-col">Seaford</div></td>
+							<td data-column="Last Name"><div class="calendar-state">DE</div></td>
+							<td data-column="Job Title"><div class="calendar-region">Mid Atlantic</div></td>
+							<td data-column="Twitter"><div class="calendar-vehicles">45 Vehicles</div></td>
+							<td data-column="Twitter"><div class="calendar-time">10:00 Pm GST</div></td>
+							<td data-column="Twitter"><div class="calendar-date">01/22/2021</div></td>
+							<td data-column="Twitter">
+								<div class="calendar-status">
+									<span>live</span>
+									<button class="btn btn-dots">
+										<svg class="icon icon-dots-three-horizontal">
+											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td data-column="First Name">
+								<div class="calendar-title first-col">Miami North</div>
+							</td>
+							<td data-column="Last Name"><div class="calendar-state">FL</div></td>
+							<td data-column="Job Title"><div class="calendar-region">Florida South</div></td>
+							<td data-column="Twitter"><div class="calendar-vehicles">189 Vehicles</div></td>
+							<td data-column="Twitter"><div class="calendar-time">10:00 Pm GST</div></td>
+							<td data-column="Twitter"><div class="calendar-date">01/23/2021</div></td>
+							<td data-column="Twitter">
+								<div class="calendar-status">
+									<span>upcoming</span>
+									<button class="btn btn-dots">
+										<svg class="icon icon-dots-three-horizontal">
+											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td data-column="First Name"><div class="calendar-title first-col">Ocala</div></td>
+							<td data-column="Last Name"><div class="calendar-state">FL</div></td>
+							<td data-column="Job Title"><div class="calendar-region">Florida South</div></td>
+							<td data-column="Twitter"><div class="calendar-vehicles">189 Vehicles</div></td>
+							<td data-column="Twitter"><div class="calendar-time">10:00 Pm GST</div></td>
+							<td data-column="Twitter"><div class="calendar-date">01/23/2021</div></td>
+							<td data-column="Twitter">
+								<div class="calendar-status">
+									<span>upcoming</span>
+									<button class="btn btn-dots">
+										<svg class="icon icon-dots-three-horizontal">
+											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+										</svg>
+									</button>
+								</div>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 			</section>
 			<!-- auction calendar -->
