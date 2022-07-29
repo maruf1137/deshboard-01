@@ -30,6 +30,7 @@
 	transition: all 0.3s;
 	padding: 20px 30px;
 	grid-column: 2/-1;
+	border-left: 1px solid #eeeeee !important;
 }
 
 /* footer {
@@ -615,7 +616,7 @@
 	transition: all 0.3s;
 	padding: 15px;
 	min-height: 100vh;
-	border-right: 1px solid #eeeeee !important;
+	/* border-right: 1px solid #eeeeee !important; */
 	background-color: var(--color-white);
 	position: relative;
 }
