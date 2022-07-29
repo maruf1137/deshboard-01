@@ -1337,9 +1337,13 @@ a:hover {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-radius: 4px;
-	opacity: 0.75;
-	background-image: linear-gradient(#7963f0, rgb(221 173 173 / 45%)), url(../img/DBBackgorund.png);
+	/* border-radius: 4px; */
+	/* opacity: 0.75; */
+	/* background: #7963F0;
+/*  */
+	border-radius: 8px;
+	background-image: url('../img/header-bg-2.jpg');
+	/* mix-blend-mode: luminosity; */
 }
 .dashBoardImages h1 {
 	font-family: 'Inter';
