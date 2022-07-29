@@ -4,6 +4,9 @@
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Inter', sans-serif !important;
+	text-transform: capitalize;
+	text-decoration: none;
+	list-style-type: none;
 }
 :root {
 	scroll-behavior: smooth;
@@ -11,34 +14,12 @@
 	--color-black: #000;
 	--color-primary: #4154f1;
 	--color-secondary: #717ff5;
+	--color-tirtiary: #7963f0;
 }
 
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-family: 'Inter', sans-serif !important;
-	font-size: 1.4rem;
-	overflow-x: hidden;
-	background-color: var(--color-white);
-	color: var(--color-black);
-}
-
-.dashboard-page {
+.page {
 	display: grid;
 	grid-template-columns: 25rem 1fr;
-}
-
-a {
-	color: var(--color-primary);
-	text-decoration: none;
-	transition: all 0.3s;
-}
-
-a:hover {
-	color: var(--color-secondary);
-	text-decoration: none;
 }
 
 .dashBoard {
@@ -627,20 +608,16 @@ a:hover {
 # Sidebar
 --------------------------------------------------------------*/
 .sidebar {
-	/* top: 60px;
-	left: 0;
-	bottom: 0; */
 	max-width: 25rem;
 	width: 100%;
-	/* position: absolute; */
 	grid-column: 1/2;
 	z-index: 996;
 	transition: all 0.3s;
 	padding: 15px;
 	min-height: 100vh;
-	/* min-height: 1450px; */
 	border-right: 1px solid #eeeeee !important;
 	background-color: var(--color-white);
+	position: relative;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -1565,24 +1542,21 @@ a:hover {
 	margin-top: 10px;
 }
 
-/* Responsive Device  */
-
-/* @media (max-width: 991px) {
-	#main {
-		margin-top: -1450px;
-		padding: 20px 30px;
-		transition: all 0.3s;
-		width: 72%;
-		margin-left: 260px;
-	}
+.sell-car-box {
+	padding: 2rem 2.8rem;
+	background-color: #f5f6f7;
+	border-radius: 1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 2rem;
+}
+.sell-car-box .icon {
+	height: 1.8rem;
+	width: 1.8rem;
+	fill: var(--color-primary);
 }
 
-@media (max-width: 862px) {
-	#main {
-		margin-top: -1450px;
-		padding: 20px 30px;
-		transition: all 0.3s;
-		width: 68%;
-		margin-left: 260px;
-	}
-} */
+.btn-sell-car {
+	gap: 1rem;
+}
