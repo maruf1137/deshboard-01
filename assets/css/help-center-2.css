@@ -139,12 +139,6 @@ body {
 	gap: 0.8rem;
 }
 
-.discussion-date .dot {
-	height: 0.5rem;
-	width: 0.5rem;
-	border-radius: 50%;
-	background-color: #9a9ea7;
-}
 .discussion-right {
 	gap: 1rem;
 }
@@ -154,4 +148,20 @@ body {
 }
 .discussion-right .icon {
 	fill: #9a9ea7;
+}
+
+/* ========================== */
+/* footer */
+/* ========================== */
+.footer-card {
+	max-width: 75rem;
+	margin: 0 auto;
+}
+
+.footer-card .btn {
+	color: var(--color-white);
+}
+.footer-card .btn:hover {
+	color: var(--color-white);
+	background-color: var(--color-secondary);
 }

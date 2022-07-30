@@ -8,13 +8,19 @@
 	scroll-behavior: smooth;
 	--color-white: #fff;
 	--color-black: #000;
+	--color-gray: #9a9ea7;
 	--color-primary: #4154f1;
 	--color-secondary: #717ff5;
+	--color-tirtiary: #7963f0;
 }
 
 /* ==================== */
 /* calendar */
 /* ==================== */
+
+.Profile {
+	margin-left: 1rem !important;
+}
 
 .calendar {
 	border: 1px solid #e4e6e8;
@@ -50,24 +56,24 @@
 .calendar .btn-switch-calendar {
 	gap: 0.8rem;
 }
+
+/* calendar item */
 .calendar .btn-list {
 	background-color: transparent;
 }
 
-.calendar-item {
-	justify-items: start;
-	align-content: start;
-}
 .calendar-item .first-col {
 	width: 20%;
 }
 
-.calendar-nav .btn {
+.auction-calendar-page .btn,
+.auction2 table .btn,
+.pagination-btn .btn {
 	background-color: transparent;
 	padding: 0;
-	padding-right: 1rem;
+	margin-right: 1rem;
 }
-.calendar-nav .icon {
+.calendar .icon {
 	height: 1.8rem;
 	width: 1.8rem;
 }
@@ -89,27 +95,25 @@
 	background-color: transparent !important;
 }
 
-.calendar-item div {
+.calendar-title {
 	color: #0d0a19;
 	font-weight: 700;
 	font-size: 1.4rem;
 	line-height: 2rem;
 }
-.calendar-list {
+
+.calendar-status {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
+
 .calendar-list {
+	padding: 1rem 0;
 }
-.calendar-list {
-}
-.calendar-list {
-}
-.calendar-list {
-}
-.calendar-list {
-}
-.calendar-list {
-}
-.calendar-list {
+.calendar-item {
+	padding: 1rem 0;
+	border-bottom: 1px solid #e4e6e8;
 }
 
 /* table */
@@ -117,81 +121,135 @@
 table {
 	width: 100%;
 	border-collapse: collapse;
-	margin: 50px auto;
+}
+
+thead {
+	border-top: 1px solid #e4e6e8;
+	border-bottom: 1px solid #e4e6e8;
 }
 
 /* Zebra striping */
-/* tr:nth-of-type(odd) { 
-	background: #eee; 
-	} */
 
 th {
-	/* 	background: #3498db;  */
-	color: black;
-	font-weight: bold;
+	color: #9a9ea7;
+	font-weight: 700;
+	font-size: 12px;
 }
 
 td,
 th {
-	padding: 10px;
-	/* 	border: 1px solid #ccc;  */
+	padding: 1rem;
 	text-align: left;
-	font-size: 18px;
+	padding: 1.8rem 2.2rem !important;
 }
 
-/* 
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-@media only screen and (max-width: 760px),
-	(min-device-width: 768px) and (max-device-width: 1024px) {
-	table {
-		width: 100%;
-	}
+/* pagination */
 
-	/* Force table to not be like tables anymore */
-	table,
-	thead,
-	tbody,
-	th,
-	td,
-	tr {
-		display: block;
-	}
+.pagination {
+	padding: 3rem 2.5rem;
+	gap: 3rem;
+}
+.pagination .btn {
+	border: 1px solid #e4e6e8;
+	border-radius: 0.6rem;
+	height: 4rem;
+	width: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+}
+.pagination .btn.active {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+}
 
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr {
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
+/* ==================== */
+/* auction2 css */
+/* ==================== */
 
-	tr {
-		border: 1px solid #ccc;
-	}
+.auction2-page .calendar {
+	border: none !important;
+}
+.auction2 .form {
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+}
+.auction2 .form .btn {
+	height: 3.6rem;
+	width: 3.6rem;
+	background-color: var(--color-tirtiary);
+}
+.auction2 .form .input,
+.auction2 .form .input::placeholder {
+	color: #0d0a19;
+	text-transform: capitalize;
+	font-weight: 700;
+}
 
-	td {
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee;
-		position: relative;
-		padding-left: 50%;
-	}
+.auction2 .form .btn .icon {
+	height: 1rem;
+	fill: var(--color-white);
+}
 
-	td:before {
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%;
-		padding-right: 10px;
-		white-space: nowrap;
-		/* Label the data */
-		content: attr(data-column);
+.aution2-filter .filter-btns {
+	gap: 2rem;
+}
+.aution2-filter .btn {
+	color: var(--color-gray);
+	border-radius: 0.8rem;
+}
+.aution2-filter .btn.active {
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), #7963f0;
+	color: var(--color-tirtiary);
+}
 
-		color: #000;
-		font-weight: bold;
-	}
+.auction2-page .btn-prev-pagination,
+.auction2-page .btn-next-pagination {
+	height: auto;
+	width: auto;
+}
+.auction2-page .pagination .btn,
+.auction2-page .pagination .btn {
+	border: none;
+	background-color: #fff;
+}
+.auction2-page .pagination .btn.active,
+.auction2-page .pagination .btn.active {
+	border: none;
+	background-color: var(--color-tirtiary);
+}
+
+/* auction list */
+.auction2-item {
+	margin-bottom: 4rem;
+}
+.auction2-item .img {
+	width: 100%;
+	height: 38rem;
+	border-radius: 0.8rem;
+}
+.auction2-item .img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.8rem;
+}
+.auction2-item .btn-info {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	background-color: #f5f6f7;
+	padding: 1.1rem !important;
+}
+.auction2-item {
+	margin-bottom: 4rem;
+}
+
+/* ==================== */
+/* auction err css */
+/* ==================== */
+
+.auction-err-body {
+	height: 75vh;
 }
