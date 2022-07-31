@@ -1,5 +1,5 @@
 /* ============================ */
-/* 1,082px */
+/* extra large device 1,082px */
 /* ============================ */
 @media (max-width: 67.625em) {
 	.CarBox {
@@ -9,7 +9,7 @@
 }
 
 /* ============================ */
-/* 992px */
+/* large device 992px */
 /* ============================ */
 @media (max-width: 62em) {
 	html {
@@ -60,16 +60,33 @@
 	.FooterTextArea .ms-auto {
 		margin-left: 0 !important;
 	}
+
+	/* sign in page */
+	.login-page {
+		padding: 0;
+	}
+
+	.signin-image-area {
+		border-radius: 0;
+	}
+
+	.signin-content-area {
+		position: relative;
+		z-index: 5;
+		width: 100%;
+		margin-top: -74rem;
+		border-radius: 16px 16px 0px 0px;
+	}
+
+	.signin-btns .btn {
+		display: block;
+	}
 }
 
 /* ============================ */
-/* 768px */
+/* madium device 768px */
 /* ============================ */
 @media (max-width: 48em) {
-	html {
-		/* font-size: 52%; */
-	}
-
 	.discussion-item {
 		flex-direction: column;
 		justify-content: start !important;
@@ -100,7 +117,7 @@
 }
 
 /* ============================ */
-/* 576px */
+/* small device 576px */
 /* ============================ */
 @media (max-width: 36em) {
 	html {

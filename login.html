@@ -23,21 +23,110 @@
 		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/utilities.css" />
 		<link href="assets/css/style.css" rel="stylesheet" />
+		<link href="assets/css/login.css" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/responsive.css" />
 	</head>
 
-	<body class="dashboard-page page">
+	<body class="login-page">
 		<div class="signin row">
-			<div class="signin-image-area col-12 col-md-6">
-				<figure class="signin-img">
-					<img src="" alt="" />
+			<div class="signin-image-area col-12 col-lg-6 position-relative p-0">
+				<figure class="signin-img img-100">
+					<img src="assets/img/signin-bg.png" alt="" class="img-100" />
 				</figure>
-				<div class="signin-footer flex-between">
+				<div class="signin-footer flex-between d-none d-lg-flex">
 					<a href="#" class="link-btn">You don’t have an account?</a>
 					<button class="btn btn-signup">sign up</button>
 				</div>
 			</div>
-			<div class="signin-content col-12 col-md-6"></div>
+			<div class="col-12 col-lg-6 signin-content-area">
+				<div class="signin-content">
+					<figure class="signin-logo mb-4">
+						<img src="assets/img/logo.png" alt="logo" class="img-100" />
+					</figure>
+					<div class="signin-title mb-5">
+						<h2 class="heading">Sign In to your account</h2>
+						<p class="text">Enter your details to proceed further</p>
+					</div>
+					<form action="#" class="signin-form w-100 mb-5">
+						<div class="signin-card mb-2 d-flex flex-column gap-1">
+							<label for="email">Email</label>
+							<div class="flex-between">
+								<input type="email" placeholder="catherine.shaw@gmail.com" class="input w-100" />
+								<svg class="icon"><use xlink:href="assets/img/icons.svg#icon-email"></use></svg>
+							</div>
+						</div>
+						<div class="signin-card d-flex mb-4 flex-column gap-1">
+							<label for="password">your password</label>
+							<div class="flex-between">
+								<input type="password" placeholder="qwerty123" class="input w-100" />
+								<svg class="icon"><use xlink:href="assets/img/icons.svg#icon-close"></use></svg>
+							</div>
+						</div>
+
+						<div class="recover flex-between">
+							<div class="d-flex align-items-center gap-2">
+								<div class="radio">
+									<input type="checkbox" checked />
+									<span class="checkmark"></span>
+								</div>
+								<span>Remember me</span>
+							</div>
+							<a href="#" class="btn link-btn color-pink-100">Recover password</a>
+						</div>
+
+						<button type="submit" class="btn btn-submit w-100 bg-pink-100 radius-10 text-white">
+							sign in
+						</button>
+					</form>
+
+					<div class="signin-lines flex-between mb-5 gap-2">
+						<span class="line"></span>
+						<span class="color-gray-100">or</span>
+						<span class="line"></span>
+					</div>
+
+					<div class="signin-btns w-100 d-flex flex-column gap-1 d-none d-lg-flex">
+						<button class="btn btn-signin w-100 radius-10">
+							<svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-google"></use>
+							</svg>
+							<span class="color-gray-100">Sign Up with Google</span>
+						</button>
+						<button class="btn btn-signin w-100 radius-10">
+							<svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-fb"></use>
+							</svg>
+							<span class="color-gray-100">Sign Up with facebook</span>
+						</button>
+						<button class="btn btn-signin w-100 radius-10">
+							<svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-twitter"></use>
+							</svg>
+							<span class="color-gray-100">Sign Up with twitter</span>
+						</button>
+					</div>
+					<div class="signin-btns w-100 flex-center gap-1 d-lg-none">
+						<button class="btn btn-signin w-100 radius-10">
+							<svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-google"></use>
+							</svg>
+							<!-- <span class="color-gray-100">Sign Up with Google</span> -->
+						</button>
+						<button class="btn btn-signin w-100 radius-10">
+							<svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-fb"></use>
+							</svg>
+							<!-- <span class="color-gray-100">Sign Up with facebook</span> -->
+						</button>
+						<button class="btn btn-signin w-100 radius-10">
+							<svg class="icon">
+								<use xlink:href="assets/img/icons.svg#icon-twitter"></use>
+							</svg>
+							<!-- <span class="color-gray-100">Sign Up with twitter</span> -->
+						</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<!-- Template Main JS File -->
