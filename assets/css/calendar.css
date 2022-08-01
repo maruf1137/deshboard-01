@@ -18,6 +18,10 @@
 /* calendar */
 /* ==================== */
 
+.auction-calendar-page .sidebar {
+	height: 135%;
+}
+
 .Profile {
 	margin-left: 1rem !important;
 }
@@ -59,14 +63,14 @@
 
 /* calendar item */
 .calendar .btn-list {
-	background-color: transparent;
+	/* background-color: transparent; */
 }
 
-table .first-col {
+/* table .first-col {
 	max-width: 12rem;
-}
+} */
 
-.auction-calendar-page .btn,
+.auction-calendar-page table .btn,
 .auction2 table .btn,
 .pagination-btn .btn {
 	background-color: transparent;
@@ -90,9 +94,9 @@ table .first-col {
 }
 
 .btn-dots {
-	padding: 0;
+	padding: 1rem !important;
 	margin-left: 1rem;
-	background-color: transparent !important;
+	background: #f5f6f7 !important;
 }
 
 .calendar-title {
@@ -227,30 +231,46 @@ table .first-col {
 	height: 75vh;
 }
 
-/* body {
-	padding: 2em;
-} */
-
-table.table {
-	width: 100%;
+/* ==================== */
+/* auction err css */
+/* ==================== */
+.table-list {
+	/* padding: 0 2rem; */
 }
-table.table thead {
-	/* border-top: 1px solid red;
-	border-bottom: 1px solid red !important; */
-}
-
-.table th {
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee !important;
-}
-
-.table th,
-.table td {
-	text-align: left;
-	padding: 1.8rem 0;
+.table-item {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	justify-content: start;
+	align-items: center;
+	gap: 0 0.6rem;
+	padding: 1.6rem 2.4rem;
+	font-size: 1.2rem;
 }
 
-.table tr {
-	border-bottom: 0px solid transparent;
-	/* padding: 1rem 0; */
+.table-head .btn {
+	background: transparent;
+	padding: 0 !important;
+}
+.table-head .arrow-btns .btn {
+	height: 1rem;
+	width: auto;
+	position: relative;
+}
+.table-head .arrow-btns .btn .icon {
+	height: 1.4rem;
+	width: 1.4rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.first-col {
+	grid-column: 1/3;
+}
+
+.auction2-page .table-item {
+	grid-template-columns: repeat(10, 1fr);
+	align-items: start;
+	gap: 0 1rem;
 }

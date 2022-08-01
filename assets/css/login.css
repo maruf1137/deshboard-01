@@ -12,7 +12,6 @@
 	padding: 3rem;
 	height: 100vh;
 	width: 100%;
-	overflow: hidden;
 }
 
 .signin {
@@ -22,11 +21,14 @@
 }
 .signin-image-area {
 	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 	border-radius: 2rem;
 }
 .signin-img {
-	/* height: ; */
+	border-radius: 2rem;
+}
+.signin-img img {
+	border-radius: 2rem;
 }
 /* .signin-img img {
 } */
@@ -38,6 +40,7 @@
 	background: rgba(13, 10, 25, 0.75);
 	backdrop-filter: blur(10.8731px);
 	padding: 3rem 6rem;
+	border-radius: 0 0 2rem 2rem;
 }
 .signin-footer .link-btn {
 	color: var(--color-white);
@@ -82,13 +85,21 @@
 .signin-card label {
 	color: #9a9ea7;
 	font-size: 12px;
+	/* transform: translateY(3.2rem); */
+	/* pointer-events: none; */
 }
-.signin-card .input,
-.signin-card .input::placeholder {
+/* .signin-card label {
+	color: #9a9ea7;
+	font-size: 12px;
+} */
+.signin-card .input {
 	color: #0d0a19;
 	font-weight: 700;
 	font-size: 14px;
+	/* border: 1px solid red; */
+	padding: 0.2rem;
 }
+
 .signin-card .icon {
 	fill: #0d0a19;
 }

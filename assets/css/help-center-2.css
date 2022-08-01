@@ -37,6 +37,19 @@ body {
 	color: var(--color-black);
 }
 
+.help-center-page .sidebar {
+	height: 142%;
+}
+
+.btn-icon {
+	position: absolute;
+	top: 0.5rem;
+	right: 1rem;
+	background: #f5f6f7;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
 /* ========================== */
 /* page title */
 /* ========================== */

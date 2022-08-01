@@ -42,7 +42,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">
-						<img src="assets/img/1.png" alt="" />
+						<!-- <img src="assets/img/1.png" alt="" /> -->
+						<svg class="icon icon-Dashboard">
+							<use xlink:href="assets/img/icons.svg#icon-Dashboard"></use>
+						</svg>
 						<span class="dashBoard">Dashboard</span>
 					</a>
 				</li>
@@ -52,12 +55,15 @@
 
 				<li class="nav-item">
 					<a
-						class="nav-link collapsed"
+						class="nav-link collapsed active"
 						data-bs-target="#components-nav"
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/2.png" alt="" /></i><span>Auctions</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Auctions"></use></svg></i
+						><span>Auctions</span>
 					</a>
 				</li>
 				<!-- End Components Nav -->
@@ -69,7 +75,10 @@
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/3.png" alt="" /></i><span>calendar</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Calendar"></use></svg></i
+						><span>Calender</span>
 					</a>
 				</li>
 				<!-- End Forms Nav -->
@@ -81,7 +90,10 @@
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/4.png" alt="" /></i><span>Active Bids</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Active-Bids"></use></svg></i
+						><span>Active Bids</span>
 					</a>
 				</li>
 				<!-- End Tables Nav -->
@@ -93,7 +105,10 @@
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/5.png" alt="" /></i><span>Saved</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Saved"></use></svg></i
+						><span>Saved</span>
 					</a>
 				</li>
 				<!-- End Icons Nav -->
@@ -102,7 +117,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/6.png" alt="" /></i>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-S-Search"></use></svg
+						></i>
 						<span>Search </span>
 					</a>
 				</li>
@@ -110,7 +128,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/8.png" alt="" /></i>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Listings"></use></svg
+						></i>
 						<span>Listings</span>
 					</a>
 				</li>
@@ -118,7 +139,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/9.png" alt="" /></i>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Book-Service"></use></svg
+						></i>
 						<span>Book Service</span>
 					</a>
 				</li>
@@ -126,7 +150,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/10.png" alt="" /></i>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Help-Center"></use></svg
+						></i>
 						<span>Help Center</span>
 					</a>
 				</li>
@@ -179,7 +206,7 @@
 			<section class="auction2 calendar">
 				<!-- calendar header for big devices -->
 
-				<div class="auction2-header flex-between mb-3 d-none d-sm-flex">
+				<div class="auction2-header flex-between mb-3 d-none d-md-flex">
 					<form action="#" class="form w-100 py-4 px-3 d-flex">
 						<button class="btn btn-form bg-pink-100 flex-center p-0">
 							<svg class="icon icon-search">
@@ -190,7 +217,7 @@
 					</form>
 				</div>
 
-				<div class="aution2-filter flex-between py-4 d-none d-sm-flex">
+				<div class="aution2-filter flex-between py-4 d-none d-md-flex">
 					<div class="filter-btns d-flex align-items-center">
 						<button class="btn btn-filter bg-gray-100">new</button>
 						<button class="btn btn-filter bg-gray-100 active">used</button>
@@ -205,7 +232,7 @@
 				</div>
 
 				<!-- auction header for small devices -->
-				<div class="auction2-header mb-3 d-sm-none py-3 radius-8">
+				<div class="auction2-header mb-3 d-md-none py-3 radius-8">
 					<form action="#" class="form w-100 py-4 px-3 d-flex mb-4">
 						<input type="text" placeholder="Infiniti" class="input w-100 px-3" />
 						<button class="btn btn-form bg-pink-100 flex-center p-0 radius-50">
@@ -224,548 +251,1082 @@
 
 				<!-- Auction2 body for big devices -->
 
-				<!-- <div class="d-none d-sm-block">
-				</div> -->
-				<table class="table">
-					<thead>
-						<tr>
-							<th>
-								<div class="calendar-search first-col">10 out of 1248</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+				<div class="d-none d-sm-block">
+					<table class="table d-none">
+						<thead>
+							<tr>
+								<th>
+									<div class="calendar-search">10 out of 1248</div>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>lot</span>
 									</div>
-									<span>lot</span>
-								</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>year</span>
 									</div>
-									<span>year</span>
-								</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>make</span>
 									</div>
-									<span>make</span>
-								</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>model</span>
 									</div>
-									<span>model</span>
-								</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>location</span>
 									</div>
-									<span>location</span>
-								</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>price</span>
 									</div>
-									<span>price</span>
-								</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>bid</span>
 									</div>
-									<span>bid</span>
-								</div>
-							</th>
-							<th>
-								<div class="calendar-state d-flex align-items-center">
-									<div class="arrow-btns d-flex flex-column align-items-center">
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
-											</svg>
-										</button>
-										<button class="btn">
-											<svg class="icon icon-keyboard_arrow_up">
-												<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
-											</svg>
-										</button>
+								</th>
+								<th>
+									<div class="calendar-state d-flex align-items-center">
+										<div class="arrow-btns d-flex flex-column align-items-center">
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+												</svg>
+											</button>
+											<button class="btn">
+												<svg class="icon icon-keyboard_arrow_up">
+													<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+												</svg>
+											</button>
+										</div>
+										<span>date</span>
 									</div>
-									<span>date</span>
-								</div>
-							</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr valign="top">
-							<td data-column="First Name">
-								<div class="calendar-title">
-									<figure class="auction2-img">
-										<img src="assets/img/auction1-img-1.png" alt="img" />
-									</figure>
-								</div>
-							</td>
-							<td data-column="Last Name"><div class="bold">#20199880</div></td>
-							<td data-column="Job Title"><div class="bold">2019</div></td>
-							<td data-column="...">
-								<div class="calendar-vehicles d-flex flex-column">
-									<span class="bold d-block">Audi</span>
-									<span>Sedan</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">S4</span>
-									<span>Premium plus</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Maximusside, MS 13494</span>
-									<span>295 Wilkinson Park Apt.</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">01 Nov 2021</span>
-									<span>8:16am</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="bold">$51,900</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">$14,000</span>
-									<span>10 bids</span>
-								</div>
-							</td>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td data-column="First Name">
+									<div class="calendar-title">
+										<figure class="auction2-img">
+											<img src="assets/img/auction1-img-1.png" alt="img" />
+										</figure>
+									</div>
+								</td>
+								<td data-column="Last Name"><div class="bold">#20199880</div></td>
+								<td data-column="Job Title"><div class="bold">2019</div></td>
+								<td data-column="...">
+									<div class="calendar-vehicles d-flex flex-column">
+										<span class="bold d-block">Audi</span>
+										<span>Sedan</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">S4</span>
+										<span>Premium plus</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Maximusside, MS 13494</span>
+										<span>295 Wilkinson Park Apt.</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">01 Nov 2021</span>
+										<span>8:16am</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="bold">$51,900</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">$14,000</span>
+										<span>10 bids</span>
+									</div>
+								</td>
 
-							<td data-column="...">
-								<div class="calendar-status">
-									<!-- <span>Past</span> -->
-									<button class="btn btn-dots">
-										<svg class="icon icon-dots-three-horizontal">
-											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+								<td data-column="...">
+									<div class="calendar-status">
+										<!-- <span>Past</span> -->
+										<button class="btn btn-dots">
+											<svg class="icon icon-dots-three-horizontal">
+												<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td data-column="First Name">
+									<div class="calendar-title">
+										<figure class="auction2-img">
+											<img src="assets/img/auction1-img-2.png" alt="img" />
+										</figure>
+									</div>
+								</td>
+								<td data-column="Last Name"><div class="bold">#20199456</div></td>
+								<td data-column="Job Title"><div class="bold">2014</div></td>
+								<td data-column="...">
+									<div class="calendar-vehicles d-flex flex-column">
+										<span class="bold d-block">Subaru</span>
+										<span>Hatchback</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Forester</span>
+										<span>Off-road package</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Subaru Champlin</span>
+										<span>135 Miles away</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">11 Sep 2021</span>
+										<span>3:56am</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="bold">$41,400</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">$11,300</span>
+										<span>8 bids</span>
+									</div>
+								</td>
+
+								<td data-column="...">
+									<div class="calendar-status">
+										<!-- <span>Past</span> -->
+										<button class="btn btn-dots">
+											<svg class="icon icon-dots-three-horizontal">
+												<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td data-column="First Name">
+									<div class="calendar-title">
+										<figure class="auction2-img">
+											<img src="assets/img/auction1-img-3.png" alt="img" />
+										</figure>
+									</div>
+								</td>
+								<td data-column="Last Name"><div class="bold">#20194132</div></td>
+								<td data-column="Job Title"><div class="bold">2013</div></td>
+								<td data-column="...">
+									<div class="calendar-vehicles d-flex flex-column">
+										<span class="bold d-block">BMM</span>
+										<span>Sedan</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">M3</span>
+										<span>Sport package</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">BMW Dealer Liana</span>
+										<span>175 Miles away</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">23 Mar 2021</span>
+										<span>7:36am</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="bold">$31,900</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">$16,900</span>
+										<span>12 bids</span>
+									</div>
+								</td>
+
+								<td data-column="...">
+									<div class="calendar-status">
+										<!-- <span>Past</span> -->
+										<button class="btn btn-dots">
+											<svg class="icon icon-dots-three-horizontal">
+												<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td data-column="First Name">
+									<div class="calendar-title">
+										<figure class="auction2-img">
+											<img src="assets/img/auction1-img-4.png" alt="img" />
+										</figure>
+									</div>
+								</td>
+								<td data-column="Last Name"><div class="bold">#20197543</div></td>
+								<td data-column="Job Title"><div class="bold">2018</div></td>
+								<td data-column="...">
+									<div class="calendar-vehicles d-flex flex-column">
+										<span class="bold d-block">Toyota</span>
+										<span>Coupe</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">BRZ</span>
+										<span>Standart</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Toyota Turnpike</span>
+										<span>190 Miles away</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">03 Oct 2021</span>
+										<span>12:20am</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="bold">$41,400</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">$4,500</span>
+										<span>5 bids</span>
+									</div>
+								</td>
+
+								<td data-column="...">
+									<div class="calendar-status">
+										<!-- <span>Past</span> -->
+										<button class="btn btn-dots">
+											<svg class="icon icon-dots-three-horizontal">
+												<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td data-column="First Name">
+									<div class="calendar-title">
+										<figure class="auction2-img">
+											<img src="assets/img/auction1-img-5.png" alt="img" />
+										</figure>
+									</div>
+								</td>
+								<td data-column="Last Name"><div class="bold">#20191345</div></td>
+								<td data-column="Job Title"><div class="bold">2011</div></td>
+								<td data-column="...">
+									<div class="calendar-vehicles d-flex flex-column">
+										<span class="bold d-block">Audi</span>
+										<span>Hatchback</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">A3</span>
+										<span>Premium plus</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Audi Brookeview</span>
+										<span>230 Miles away</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">01 Feb 2021</span>
+										<span>1:32pm</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="bold">$26,000</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">$14,000</span>
+										<span>4 bids</span>
+									</div>
+								</td>
+
+								<td data-column="...">
+									<div class="calendar-status">
+										<!-- <span>Past</span> -->
+										<button class="btn btn-dots">
+											<svg class="icon icon-dots-three-horizontal">
+												<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+
+							<tr valign="top">
+								<td data-column="First Name">
+									<div class="calendar-title">
+										<figure class="auction2-img">
+											<img src="assets/img/auction1-img-6.png" alt="img" />
+										</figure>
+									</div>
+								</td>
+								<td data-column="Last Name"><div class="bold">#20199955</div></td>
+								<td data-column="Job Title"><div class="bold">2013</div></td>
+								<td data-column="...">
+									<div class="calendar-vehicles d-flex flex-column">
+										<span class="bold d-block">fiat</span>
+										<span>Hatchback</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">C500</span>
+										<span>Damage history</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Fiat Kayleighbury</span>
+										<span>256 Miles away</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">05 Oct 2021</span>
+										<span>1:329am</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="bold">$28,900</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">$8,200</span>
+										<span>32 bids</span>
+									</div>
+								</td>
+
+								<td data-column="...">
+									<div class="calendar-status">
+										<!-- <span>Past</span> -->
+										<button class="btn btn-dots">
+											<svg class="icon icon-dots-three-horizontal">
+												<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+
+							<tr valign="top">
+								<td data-column="First Name">
+									<div class="calendar-title">
+										<figure class="auction2-img">
+											<img src="assets/img/auction1-img-4.png" alt="img" />
+										</figure>
+									</div>
+								</td>
+								<td data-column="Last Name"><div class="bold">#20190332</div></td>
+								<td data-column="Job Title"><div class="bold">2019</div></td>
+								<td data-column="...">
+									<div class="calendar-vehicles d-flex flex-column">
+										<span class="bold d-block">ford</span>
+										<span>Coupe</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Mustang GT</span>
+										<span>Sports plus</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">Ford Turnpike</span>
+										<span>315 Miles away</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">03 Jan 2021</span>
+										<span>8:16am</span>
+									</div>
+								</td>
+								<td data-column="...">
+									<div class="bold">$32,500</div>
+								</td>
+								<td data-column="...">
+									<div class="">
+										<span class="bold d-block">$6,400</span>
+										<span>18 bids</span>
+									</div>
+								</td>
+
+								<td data-column="...">
+									<div class="calendar-status">
+										<!-- <span>Past</span> -->
+										<button class="btn btn-dots">
+											<svg class="icon icon-dots-three-horizontal">
+												<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+											</svg>
+										</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="table-list d-none d-md-block">
+					<div class="table-item table-head">
+						<div>
+							<div class="calendar-search">10 out of 1248</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
 										</svg>
 									</button>
 								</div>
-							</td>
-						</tr>
-						<tr valign="top">
-							<td data-column="First Name">
-								<div class="calendar-title">
-									<figure class="auction2-img">
-										<img src="assets/img/auction1-img-2.png" alt="img" />
-									</figure>
-								</div>
-							</td>
-							<td data-column="Last Name"><div class="bold">#20199456</div></td>
-							<td data-column="Job Title"><div class="bold">2014</div></td>
-							<td data-column="...">
-								<div class="calendar-vehicles d-flex flex-column">
-									<span class="bold d-block">Subaru</span>
-									<span>Hatchback</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Forester</span>
-									<span>Off-road package</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Subaru Champlin</span>
-									<span>135 Miles away</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">11 Sep 2021</span>
-									<span>3:56am</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="bold">$41,400</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">$11,300</span>
-									<span>8 bids</span>
-								</div>
-							</td>
-
-							<td data-column="...">
-								<div class="calendar-status">
-									<!-- <span>Past</span> -->
-									<button class="btn btn-dots">
-										<svg class="icon icon-dots-three-horizontal">
-											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+								<span>lot</span>
+							</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
 										</svg>
 									</button>
 								</div>
-							</td>
-						</tr>
-
-						<tr valign="top">
-							<td data-column="First Name">
-								<div class="calendar-title">
-									<figure class="auction2-img">
-										<img src="assets/img/auction1-img-3.png" alt="img" />
-									</figure>
-								</div>
-							</td>
-							<td data-column="Last Name"><div class="bold">#20194132</div></td>
-							<td data-column="Job Title"><div class="bold">2013</div></td>
-							<td data-column="...">
-								<div class="calendar-vehicles d-flex flex-column">
-									<span class="bold d-block">BMM</span>
-									<span>Sedan</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">M3</span>
-									<span>Sport package</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">BMW Dealer Liana</span>
-									<span>175 Miles away</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">23 Mar 2021</span>
-									<span>7:36am</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="bold">$31,900</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">$16,900</span>
-									<span>12 bids</span>
-								</div>
-							</td>
-
-							<td data-column="...">
-								<div class="calendar-status">
-									<!-- <span>Past</span> -->
-									<button class="btn btn-dots">
-										<svg class="icon icon-dots-three-horizontal">
-											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+								<span>year</span>
+							</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
 										</svg>
 									</button>
 								</div>
-							</td>
-						</tr>
-
-						<tr valign="top">
-							<td data-column="First Name">
-								<div class="calendar-title">
-									<figure class="auction2-img">
-										<img src="assets/img/auction1-img-4.png" alt="img" />
-									</figure>
-								</div>
-							</td>
-							<td data-column="Last Name"><div class="bold">#20197543</div></td>
-							<td data-column="Job Title"><div class="bold">2018</div></td>
-							<td data-column="...">
-								<div class="calendar-vehicles d-flex flex-column">
-									<span class="bold d-block">Toyota</span>
-									<span>Coupe</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">BRZ</span>
-									<span>Standart</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Toyota Turnpike</span>
-									<span>190 Miles away</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">03 Oct 2021</span>
-									<span>12:20am</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="bold">$41,400</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">$4,500</span>
-									<span>5 bids</span>
-								</div>
-							</td>
-
-							<td data-column="...">
-								<div class="calendar-status">
-									<!-- <span>Past</span> -->
-									<button class="btn btn-dots">
-										<svg class="icon icon-dots-three-horizontal">
-											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+								<span>make</span>
+							</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
 										</svg>
 									</button>
 								</div>
-							</td>
-						</tr>
-
-						<tr valign="top">
-							<td data-column="First Name">
-								<div class="calendar-title">
-									<figure class="auction2-img">
-										<img src="assets/img/auction1-img-5.png" alt="img" />
-									</figure>
-								</div>
-							</td>
-							<td data-column="Last Name"><div class="bold">#20191345</div></td>
-							<td data-column="Job Title"><div class="bold">2011</div></td>
-							<td data-column="...">
-								<div class="calendar-vehicles d-flex flex-column">
-									<span class="bold d-block">Audi</span>
-									<span>Hatchback</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">A3</span>
-									<span>Premium plus</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Audi Brookeview</span>
-									<span>230 Miles away</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">01 Feb 2021</span>
-									<span>1:32pm</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="bold">$26,000</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">$14,000</span>
-									<span>4 bids</span>
-								</div>
-							</td>
-
-							<td data-column="...">
-								<div class="calendar-status">
-									<!-- <span>Past</span> -->
-									<button class="btn btn-dots">
-										<svg class="icon icon-dots-three-horizontal">
-											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+								<span>model</span>
+							</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
 										</svg>
 									</button>
 								</div>
-							</td>
-						</tr>
-
-						<tr valign="top">
-							<td data-column="First Name">
-								<div class="calendar-title">
-									<figure class="auction2-img">
-										<img src="assets/img/auction1-img-6.png" alt="img" />
-									</figure>
-								</div>
-							</td>
-							<td data-column="Last Name"><div class="bold">#20199955</div></td>
-							<td data-column="Job Title"><div class="bold">2013</div></td>
-							<td data-column="...">
-								<div class="calendar-vehicles d-flex flex-column">
-									<span class="bold d-block">fiat</span>
-									<span>Hatchback</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">C500</span>
-									<span>Damage history</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Fiat Kayleighbury</span>
-									<span>256 Miles away</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">05 Oct 2021</span>
-									<span>1:329am</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="bold">$28,900</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">$8,200</span>
-									<span>32 bids</span>
-								</div>
-							</td>
-
-							<td data-column="...">
-								<div class="calendar-status">
-									<!-- <span>Past</span> -->
-									<button class="btn btn-dots">
-										<svg class="icon icon-dots-three-horizontal">
-											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+								<span>location</span>
+							</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
 										</svg>
 									</button>
 								</div>
-							</td>
-						</tr>
-
-						<tr valign="top">
-							<td data-column="First Name">
-								<div class="calendar-title">
-									<figure class="auction2-img">
-										<img src="assets/img/auction1-img-4.png" alt="img" />
-									</figure>
-								</div>
-							</td>
-							<td data-column="Last Name"><div class="bold">#20190332</div></td>
-							<td data-column="Job Title"><div class="bold">2019</div></td>
-							<td data-column="...">
-								<div class="calendar-vehicles d-flex flex-column">
-									<span class="bold d-block">ford</span>
-									<span>Coupe</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Mustang GT</span>
-									<span>Sports plus</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">Ford Turnpike</span>
-									<span>315 Miles away</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">03 Jan 2021</span>
-									<span>8:16am</span>
-								</div>
-							</td>
-							<td data-column="...">
-								<div class="bold">$32,500</div>
-							</td>
-							<td data-column="...">
-								<div class="">
-									<span class="bold d-block">$6,400</span>
-									<span>18 bids</span>
-								</div>
-							</td>
-
-							<td data-column="...">
-								<div class="calendar-status">
-									<!-- <span>Past</span> -->
-									<button class="btn btn-dots">
-										<svg class="icon icon-dots-three-horizontal">
-											<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+								<span>price</span>
+							</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
 										</svg>
 									</button>
 								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+								<span>bid</span>
+							</div>
+						</div>
+						<div>
+							<div class="calendar-state d-flex align-items-center">
+								<div class="arrow-btns d-flex flex-column align-items-center">
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_up"></use>
+										</svg>
+									</button>
+									<button class="btn">
+										<svg class="icon icon-keyboard_arrow_up">
+											<use xlink:href="assets/img/icons.svg#icon-keyboard_arrow_down"></use>
+										</svg>
+									</button>
+								</div>
+								<span>date</span>
+							</div>
+						</div>
+					</div>
+					<div class="table-item">
+						<td data-column="First Name">
+							<div class="calendar-title">
+								<figure class="auction2-img">
+									<img src="assets/img/auction1-img-1.png" alt="img" />
+								</figure>
+							</div>
+						</td>
+						<td data-column="Last Name"><div class="bold">#20199880</div></td>
+						<td data-column="Job Title"><div class="bold">2019</div></td>
+						<td data-column="...">
+							<div class="calendar-vehicles d-flex flex-column">
+								<span class="bold d-block">Audi</span>
+								<span>Sedan</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">S4</span>
+								<span>Premium plus</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Maximusside, MS 13494</span>
+								<span>295 Wilkinson Park Apt.</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">01 Nov 2021</span>
+								<span>8:16am</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="bold">$51,900</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">$14,000</span>
+								<span>10 bids</span>
+							</div>
+						</td>
+
+						<td data-column="...">
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg class="icon icon-dots-three-horizontal">
+										<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+									</svg>
+								</button>
+							</div>
+						</td>
+					</div>
+					<div class="table-item">
+						<td data-column="First Name">
+							<div class="calendar-title">
+								<figure class="auction2-img">
+									<img src="assets/img/auction1-img-2.png" alt="img" />
+								</figure>
+							</div>
+						</td>
+						<td data-column="Last Name"><div class="bold">#20199456</div></td>
+						<td data-column="Job Title"><div class="bold">2014</div></td>
+						<td data-column="...">
+							<div class="calendar-vehicles d-flex flex-column">
+								<span class="bold d-block">Subaru</span>
+								<span>Hatchback</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Forester</span>
+								<span>Off-road package</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Subaru Champlin</span>
+								<span>135 Miles away</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">11 Sep 2021</span>
+								<span>3:56am</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="bold">$41,400</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">$11,300</span>
+								<span>8 bids</span>
+							</div>
+						</td>
+
+						<td data-column="...">
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg class="icon icon-dots-three-horizontal">
+										<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+									</svg>
+								</button>
+							</div>
+						</td>
+					</div>
+
+					<div class="table-item">
+						<td data-column="First Name">
+							<div class="calendar-title">
+								<figure class="auction2-img">
+									<img src="assets/img/auction1-img-3.png" alt="img" />
+								</figure>
+							</div>
+						</td>
+						<td data-column="Last Name"><div class="bold">#20194132</div></td>
+						<td data-column="Job Title"><div class="bold">2013</div></td>
+						<td data-column="...">
+							<div class="calendar-vehicles d-flex flex-column">
+								<span class="bold d-block">BMM</span>
+								<span>Sedan</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">M3</span>
+								<span>Sport package</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">BMW Dealer Liana</span>
+								<span>175 Miles away</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">23 Mar 2021</span>
+								<span>7:36am</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="bold">$31,900</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">$16,900</span>
+								<span>12 bids</span>
+							</div>
+						</td>
+
+						<td data-column="...">
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg class="icon icon-dots-three-horizontal">
+										<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+									</svg>
+								</button>
+							</div>
+						</td>
+					</div>
+
+					<div class="table-item">
+						<td data-column="First Name">
+							<div class="calendar-title">
+								<figure class="auction2-img">
+									<img src="assets/img/auction1-img-4.png" alt="img" />
+								</figure>
+							</div>
+						</td>
+						<td data-column="Last Name"><div class="bold">#20197543</div></td>
+						<td data-column="Job Title"><div class="bold">2018</div></td>
+						<td data-column="...">
+							<div class="calendar-vehicles d-flex flex-column">
+								<span class="bold d-block">Toyota</span>
+								<span>Coupe</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">BRZ</span>
+								<span>Standart</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Toyota Turnpike</span>
+								<span>190 Miles away</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">03 Oct 2021</span>
+								<span>12:20am</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="bold">$41,400</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">$4,500</span>
+								<span>5 bids</span>
+							</div>
+						</td>
+
+						<td data-column="...">
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg class="icon icon-dots-three-horizontal">
+										<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+									</svg>
+								</button>
+							</div>
+						</td>
+					</div>
+
+					<div class="table-item">
+						<td data-column="First Name">
+							<div class="calendar-title">
+								<figure class="auction2-img">
+									<img src="assets/img/auction1-img-5.png" alt="img" />
+								</figure>
+							</div>
+						</td>
+						<td data-column="Last Name"><div class="bold">#20191345</div></td>
+						<td data-column="Job Title"><div class="bold">2011</div></td>
+						<td data-column="...">
+							<div class="calendar-vehicles d-flex flex-column">
+								<span class="bold d-block">Audi</span>
+								<span>Hatchback</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">A3</span>
+								<span>Premium plus</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Audi Brookeview</span>
+								<span>230 Miles away</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">01 Feb 2021</span>
+								<span>1:32pm</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="bold">$26,000</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">$14,000</span>
+								<span>4 bids</span>
+							</div>
+						</td>
+
+						<td data-column="...">
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg class="icon icon-dots-three-horizontal">
+										<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+									</svg>
+								</button>
+							</div>
+						</td>
+					</div>
+
+					<div class="table-item">
+						<td data-column="First Name">
+							<div class="calendar-title">
+								<figure class="auction2-img">
+									<img src="assets/img/auction1-img-6.png" alt="img" />
+								</figure>
+							</div>
+						</td>
+						<td data-column="Last Name"><div class="bold">#20199955</div></td>
+						<td data-column="Job Title"><div class="bold">2013</div></td>
+						<td data-column="...">
+							<div class="calendar-vehicles d-flex flex-column">
+								<span class="bold d-block">fiat</span>
+								<span>Hatchback</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">C500</span>
+								<span>Damage history</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Fiat Kayleighbury</span>
+								<span>256 Miles away</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">05 Oct 2021</span>
+								<span>1:329am</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="bold">$28,900</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">$8,200</span>
+								<span>32 bids</span>
+							</div>
+						</td>
+
+						<td data-column="...">
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg class="icon icon-dots-three-horizontal">
+										<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+									</svg>
+								</button>
+							</div>
+						</td>
+					</div>
+
+					<div class="table-item">
+						<td data-column="First Name">
+							<div class="calendar-title">
+								<figure class="auction2-img">
+									<img src="assets/img/auction1-img-4.png" alt="img" />
+								</figure>
+							</div>
+						</td>
+						<td data-column="Last Name"><div class="bold">#20190332</div></td>
+						<td data-column="Job Title"><div class="bold">2019</div></td>
+						<td data-column="...">
+							<div class="calendar-vehicles d-flex flex-column">
+								<span class="bold d-block">ford</span>
+								<span>Coupe</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Mustang GT</span>
+								<span>Sports plus</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">Ford Turnpike</span>
+								<span>315 Miles away</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">03 Jan 2021</span>
+								<span>8:16am</span>
+							</div>
+						</td>
+						<td data-column="...">
+							<div class="bold">$32,500</div>
+						</td>
+						<td data-column="...">
+							<div class="">
+								<span class="bold d-block">$6,400</span>
+								<span>18 bids</span>
+							</div>
+						</td>
+
+						<td data-column="...">
+							<div class="calendar-status">
+								<!-- <span>Past</span> -->
+								<button class="btn btn-dots">
+									<svg class="icon icon-dots-three-horizontal">
+										<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+									</svg>
+								</button>
+							</div>
+						</td>
+					</div>
+				</div>
 
 				<!-- Auction2 body for small devices -->
-				<div class="auction2-list d-sm-none">
+				<div class="auction2-list d-md-none">
 					<div class="auction2-item position-relative">
 						<figure class="img mb-3">
 							<img src="assets/img/auction1-img-1.png" alt="img" />

@@ -6,6 +6,11 @@
 		display: flex;
 		height: auto;
 	}
+
+	/* auction calendar table */
+	.table-item {
+		padding: 1.6rem 1.4rem;
+	}
 }
 
 /* ============================ */
@@ -64,6 +69,7 @@
 	/* sign in page */
 	.login-page {
 		padding: 0;
+		overflow: hidden;
 	}
 
 	.signin-image-area {
@@ -76,6 +82,10 @@
 		width: 100%;
 		margin-top: -74rem;
 		border-radius: 16px 16px 0px 0px;
+	}
+
+	.signin-img img {
+		border-radius: 0;
 	}
 
 	.signin-btns .btn {
@@ -113,6 +123,11 @@
 	}
 	.calendar-header .btn-swith-months {
 		background-color: #f5f6f7 !important;
+	}
+
+	/* auction calendar table */
+	.table-item {
+		padding: 1.6rem 0.8rem;
 	}
 }
 

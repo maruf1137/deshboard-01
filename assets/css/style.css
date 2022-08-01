@@ -193,6 +193,7 @@
 	margin-bottom: 0px;
 	border: none;
 	border-radius: 5px;
+	display: block !important;
 }
 
 .card-header,
@@ -204,7 +205,8 @@
 }
 
 .card-title {
-	padding: 20px 0 15px 0;
+	/* padding: 20px 0 15px 0; */
+	margin-bottom: 2rem;
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 700;
@@ -220,7 +222,7 @@
 }
 
 .card-body {
-	padding: 0 20px 20px 20px;
+	padding: 0 !important;
 }
 
 .card-img-overlay {
@@ -625,9 +627,9 @@
 	align-items: center;
 	font-size: 15px;
 	font-weight: 600;
-	color: #4154f1;
+	/* color: #4154f1; */
 	transition: 0.3;
-	background: #f5f6f7;
+	/* background: #f5f6f7; */
 	padding: 10px 15px;
 	border-radius: 4px;
 }
@@ -647,13 +649,15 @@
 	color: #899bbd;
 }
 
-.sidebar-nav .nav-link:hover {
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
 	color: #0d0a19;
 	background: #f5f6f7;
 }
 
-.sidebar-nav .nav-link:hover i {
-	color: #4154f1;
+.sidebar-nav .nav-link:hover .icon,
+.sidebar-nav .active .icon {
+	fill: var(--color-tirtiary);
 }
 
 .sidebar-nav .nav-link .bi-chevron-down {
@@ -782,10 +786,8 @@
 # Dashboard
 --------------------------------------------------------------*/
 /* Filter dropdown */
-.dashboard .filter {
-	position: absolute;
-	right: 0px;
-	top: 15px;
+.dashboard {
+	border-bottom: 1px solid #eee;
 }
 
 .dashboard .filter .icon {
@@ -1325,7 +1327,7 @@
 	color: #0d0a19;
 }
 .performance {
-	margin-top: 40px;
+	/* margin-top: 40px; */
 	display: flex;
 }
 .Last7 {
@@ -1510,7 +1512,8 @@
 
 .sell-car-box {
 	padding: 2rem 2.8rem;
-	background-color: #f5f6f7;
+	background: #f5f6f7;
+	/* border-radius: 10px; */
 	border-radius: 1rem;
 	position: absolute;
 	bottom: 0;
@@ -1527,7 +1530,14 @@
 .btn-sell-car {
 	gap: 1rem;
 	font-size: 1.2rem;
-	/* padding: 0; */
+	background: #ffffff !important;
+	box-shadow: 0px 3px 4px rgba(153, 155, 168, 0.15);
+	border-radius: 8px;
+	padding: 1rem 0 !important;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .dot {

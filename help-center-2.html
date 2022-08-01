@@ -42,7 +42,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">
-						<img src="assets/img/1.png" alt="" />
+						<!-- <img src="assets/img/1.png" alt="" /> -->
+						<svg class="icon icon-Dashboard">
+							<use xlink:href="assets/img/icons.svg#icon-Dashboard"></use>
+						</svg>
 						<span class="dashBoard">Dashboard</span>
 					</a>
 				</li>
@@ -57,7 +60,10 @@
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/2.png" alt="" /></i><span>Auctions</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Auctions"></use></svg></i
+						><span>Auctions</span>
 					</a>
 				</li>
 				<!-- End Components Nav -->
@@ -69,7 +75,10 @@
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/3.png" alt="" /></i><span>Calender</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Calendar"></use></svg></i
+						><span>Calender</span>
 					</a>
 				</li>
 				<!-- End Forms Nav -->
@@ -81,7 +90,10 @@
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/4.png" alt="" /></i><span>Active Bids</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Active-Bids"></use></svg></i
+						><span>Active Bids</span>
 					</a>
 				</li>
 				<!-- End Tables Nav -->
@@ -93,7 +105,10 @@
 						data-bs-toggle="collapse"
 						href="#"
 					>
-						<i><img src="assets/img/5.png" alt="" /></i><span>Saved</span>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Saved"></use></svg></i
+						><span>Saved</span>
 					</a>
 				</li>
 				<!-- End Icons Nav -->
@@ -102,7 +117,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/6.png" alt="" /></i>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-S-Search"></use></svg
+						></i>
 						<span>Search </span>
 					</a>
 				</li>
@@ -110,7 +128,10 @@
 
 				<li class="nav-item">
 					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/8.png" alt="" /></i>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Listings"></use></svg
+						></i>
 						<span>Listings</span>
 					</a>
 				</li>
@@ -118,15 +139,21 @@
 
 				<li class="nav-item">
 					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/9.png" alt="" /></i>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Book-Service"></use></svg
+						></i>
 						<span>Book Service</span>
 					</a>
 				</li>
 				<!-- End Book Service Page Nav -->
 
 				<li class="nav-item">
-					<a class="nav-link collapsed" href="">
-						<i><img src="assets/img/10.png" alt="" /></i>
+					<a class="nav-link collapsed active" href="">
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Help-Center"></use></svg
+						></i>
 						<span>Help Center</span>
 					</a>
 				</li>
@@ -144,12 +171,16 @@
 		<!-- End Sidebar-->
 
 		<main id="main" class="main">
-			<div class="pagetitle d-flex justify-content-between align-items-center">
+			<div class="pagetitle d-flex justify-content-between align-items-center d-none d-sm-flex">
 				<div>
 					<h1>Help Center</h1>
 				</div>
 
 				<div class="d-flex align-items-center">
+					<form action="#" class="form d-flex align-items-center">
+						<svg class="icon mr-1"><use xlink:href="assets/img/icons.svg#icon-S-Search"></use></svg>
+						<input type="text" placeholder="Type to search" class="input w-100" />
+					</form>
 					<div class="notification">
 						<svg class="icon">
 							<use xlink:href="assets/img/icons.svg#icon-Bell-Icon"></use>
@@ -160,6 +191,16 @@
 						<img src="assets/img/profile-img.jpg" alt="" />
 					</div>
 				</div>
+			</div>
+			<div class="pagetitle text-center d-block d-sm-none position-relative">
+				<div>
+					<h1>Help Center</h1>
+				</div>
+				<button class="btn-icon">
+					<svg class="icon">
+						<use xlink:href="assets/img/icons.svg#icon-dots-three-horizontal"></use>
+					</svg>
+				</button>
 			</div>
 			<!-- End Page Title -->
 
@@ -184,7 +225,7 @@
 			<!-- dashboard title image end -->
 
 			<!-- top articles -->
-			<section class="article">
+			<section class="article mt-5">
 				<h5 class="card-title">top articles</h5>
 				<div class="article-list row g-5 align-items-stretch">
 					<div class="col-12 col-sm-6 col-lg-4">
@@ -236,7 +277,7 @@
 			<!-- top articles -->
 
 			<!-- latest discussion -->
-			<section class="discussion">
+			<section class="discussion mt-5">
 				<h5 class="card-title">Latest discussions</h5>
 				<div class="discussion-list">
 					<div class="discussion-item d-flex justify-content-between align-items-center">

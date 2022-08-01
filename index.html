@@ -1,637 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title></title>
+		<meta content="" name="description" />
+		<meta content="" name="keywords" />
 
-  <title></title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+		<!-- Favicons -->
+		<link href="assets/img/favicon.png" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.gstatic.com" rel="preconnect" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+			rel="stylesheet"
+		/>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+		<link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+		<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+		<link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/utilities.css" />
+		<link href="assets/css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+	</head>
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/utilities.css">
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
+	<body class="dashboard-page page">
+		<!-- ======= sidebar ======= -->
 
-<body class="dashboard-page page">
+		<aside id="sidebar" class="sidebar position-absolute">
+			<button class="btn-close-sidebar">
+				<svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
+			</button>
+			<ul class="sidebar-nav" id="sidebar-nav">
+				<li class="nav-item">
+					<img class="mb-3 ms-3" src="assets/img/logo.png" alt="" />
+				</li>
 
-  <!-- ======= sidebar ======= -->
+				<li class="nav-item">
+					<a class="nav-link active" href="index.html">
+						<!-- <img src="assets/img/1.png" alt="" /> -->
+						<svg class="icon icon-Dashboard">
+							<use xlink:href="assets/img/icons.svg#icon-Dashboard"></use>
+						</svg>
+						<span class="dashBoard">Dashboard</span>
+					</a>
+				</li>
+				<!-- End Dashboard Nav -->
 
-  <aside id="sidebar" class="sidebar position-absolute">
-    <button class="btn-close-sidebar">
-      <svg class="icon icon-clear"><use xlink:href="assets/img/icons.svg#icon-clear"></use></svg>
-    </button>
-    <ul class="sidebar-nav" id="sidebar-nav">
-      <li class="nav-item">
-         <img class="mb-3 ms-3" src="assets/img/logo.png" alt="">
-      </li>
+				<li class="nav-heading">Auction</li>
 
-      <li class="nav-item">
-        <a class="nav-link " href="index.html">
-         <img src="assets/img/1.png" alt="">
-          <span class="dashBoard">Dashboard</span>
-        </a>
-      </li>
-      <!-- End Dashboard Nav -->
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#components-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Auctions"></use></svg></i
+						><span>Auctions</span>
+					</a>
+				</li>
+				<!-- End Components Nav -->
 
-      <li class="nav-heading">Auction</li>
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#forms-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Calendar"></use></svg></i
+						><span>Calender</span>
+					</a>
+				</li>
+				<!-- End Forms Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
-          <i><img src="assets/img/2.png" alt=""></i><span>Auctions</span>
-        </a>
-     
-      </li>
-      <!-- End Components Nav -->
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#tables-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Active-Bids"></use></svg></i
+						><span>Active Bids</span>
+					</a>
+				</li>
+				<!-- End Tables Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i><img src="assets/img/3.png" alt=""></i><span>Calender</span>
-        </a>
-      </li>
-      <!-- End Forms Nav -->
+				<li class="nav-item">
+					<a
+						class="nav-link collapsed"
+						data-bs-target="#icons-nav"
+						data-bs-toggle="collapse"
+						href="#"
+					>
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Saved"></use></svg></i
+						><span>Saved</span>
+					</a>
+				</li>
+				<!-- End Icons Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i><img src="assets/img/4.png" alt=""></i><span>Active Bids</span>
-        </a>
-      </li>
-      <!-- End Tables Nav -->
+				<li class="nav-heading">Vehicle finder</li>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#icons-nav" data-bs-toggle="collapse" href="#">
-          <i><img src="assets/img/5.png" alt=""></i><span>Saved</span>
-        </a>
-      </li><!-- End Icons Nav -->
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-S-Search"></use></svg
+						></i>
+						<span>Search </span>
+					</a>
+				</li>
+				<!-- End Profile Page Nav -->
 
-      <li class="nav-heading">Vehicle finder</li>
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Listings"></use></svg
+						></i>
+						<span>Listings</span>
+					</a>
+				</li>
+				<!-- End Listing Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="">
-          <i><img src="assets/img/6.png" alt=""></i>
-          <span>Search </span>
-        </a>
-      </li><!-- End Profile Page Nav -->
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Book-Service"></use></svg
+						></i>
+						<span>Book Service</span>
+					</a>
+				</li>
+				<!-- End Book Service Page Nav -->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="">
-          <i><img src="assets/img/8.png" alt=""></i>
-          <span>Listings</span>
-        </a>
-      </li><!-- End Listing Page Nav -->
+				<li class="nav-item">
+					<a class="nav-link collapsed" href="">
+						<i
+							><svg class="icon icon-Dashboard">
+								<use xlink:href="assets/img/icons.svg#icon-Help-Center"></use></svg
+						></i>
+						<span>Help Center</span>
+					</a>
+				</li>
+				<!-- End Register Page Nav -->
+			</ul>
+		</aside>
+		<!-- End Sidebar-->
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="">
-          <i><img src="assets/img/9.png" alt=""></i>
-          <span>Book Service</span>
-        </a>
-      </li><!-- End Book Service Page Nav -->
+		<main id="main" class="main">
+			<div class="pagetitle d-flex">
+				<div>
+					<h1>Dashboard</h1>
+				</div>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="">
-          <i><img src="assets/img/10.png" alt=""></i>
-          <span>Help Center</span>
-        </a>
-      </li><!-- End Register Page Nav -->
-    </ul>
+				<div class="d-flex ms-auto">
+					<div class="notification me-2">
+						<img src="assets/img/11.png" alt="" />
+					</div>
+					<div class="Profile">
+						<img src="assets/img/profile-img.jpg" alt="" />
+					</div>
+				</div>
+			</div>
+			<!-- End Page Title -->
 
-  </aside><!-- End Sidebar-->
+			<div class="dashBoardImages">
+				<div class="SomePadding">
+					<h1>We updated our cancelation</h1>
+					<h1>policy to ensure the user experience</h1>
+					<p>Learn more details on our latest blog post</p>
+					<button>Explore updates</button>
+				</div>
+			</div>
 
-  <main id="main" class="main">
-    <div class="pagetitle d-flex">
-      <div>
-        <h1>Dashboard</h1>
-      </div>
-      
-      <div class="d-flex ms-auto">
-        <div class="notification me-2">
-          <img src="assets/img/11.png" alt="">
-        </div>
-        <div class="Profile">
-          <img src="assets/img/profile-img.jpg" alt="">
-        </div>
-      </div>
-    </div><!-- End Page Title -->
+			<section class="section dashboard pb-4 mt-5">
+				<div class="row gap g-5">
+					<!-- Reports -->
+					<div class="col-lg-6">
+						<div class="d-flex justify-content-between align-items-start">
+							<h5 class="card-title">Your listing views</h5>
+							<div class="filter">
+								<img src="assets/img/3.png" alt="" /> <span>Last 7 days</span>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<!-- Line Chart -->
+								<div id="reportsChart"></div>
+								<script>
+									document.addEventListener('DOMContentLoaded', () => {
+										new ApexCharts(document.querySelector('#reportsChart'), {
+											series: [
+												{
+													name: 'Views',
+													data: [11, 32, 45, 32, 34, 52, 41],
+												},
+											],
+											chart: {
+												height: 250,
+												type: 'area',
+												toolbar: {
+													show: false,
+												},
+											},
+											markers: {
+												size: 4,
+											},
+											colors: ['#ff771d'],
+											fill: {
+												type: 'gradient',
+												gradient: {
+													shadeIntensity: 1,
+													opacityFrom: 0.3,
+													opacityTo: 0.4,
+													stops: [0, 90, 100],
+												},
+											},
+											dataLabels: {
+												enabled: false,
+											},
+											stroke: {
+												curve: 'smooth',
+												width: 1,
+											},
 
-    <div class="dashBoardImages">
-      <div class="SomePadding">
-        <h1>We updated our cancelation</h1>
-        <h1> policy to ensure the user experience </h1>
-         <p>Learn more details on our latest blog post</p>
-         <button>Explore updates</button>
-      </div>
-    </div>
+											tooltip: {
+												x: {
+													format: 'dd/MM/yy HH:mm',
+												},
+											},
+										}).render();
+									});
+								</script>
+								<!-- End Line Chart -->
+							</div>
+						</div>
+					</div>
+					<!-- End Reports -->
 
-    <section class="section dashboard">
-      <div class="row gap">
-            <!-- Reports -->
-            <div class="col-lg-6 mt-4">
-              <div class="card">
-                <div class="filter">
-                  <img src="assets/img/3.png" alt=""> <span>Last 7 days</span>
-                </div>
+					<div class="col-lg-6">
+						<!-- performance -->
+						<div class="performance">
+							<div>
+								<p class="AuctionsP">Auctions performance</p>
+							</div>
 
-                <div class="card-body">
-                  <h5 class="card-title">Your listing views</h5>
+							<div class="ms-auto">
+								<img src="assets/img/3.png" alt="" class="me-1" />
+								<span class="Last7">Last 7 days</span>
+							</div>
+						</div>
+						<!-- performance -->
 
-                  <!-- Line Chart -->
-                  <div id="reportsChart"></div>
-              
+						<div class="CarBoxes">
+							<!-- car box  1-->
+							<div class="CarBox">
+								<div class="carPhoto">
+									<img src="assets/img/Img.png" alt="" />
+								</div>
+								<div class="carText">
+									<p>
+										2013 Subaru Forester <br />
+										Premium Plus
+									</p>
+								</div>
+								<div class="carViews ms-auto">
+									<div class="MoreViews me-4">
+										<h4>12,600</h4>
+										<p>Views</p>
+									</div>
+									<div class="MoreViews me-3">
+										<h4>12,6k</h4>
+										<p>Last Bid</p>
+									</div>
+								</div>
+							</div>
+							<!-- car box  -->
 
-                  <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-                      new ApexCharts(document.querySelector("#reportsChart"), {
-                        series: [{
-                          name: 'Views',
-                          data: [11, 32, 45, 32, 34, 52, 41]
-                        }],
-                        chart: {
-                          height: 250,
-                          type: 'area',
-                          toolbar: {
-                            show: false
-                          },
-                        },
-                        markers: {
-                          size: 4
-                        },
-                        colors: [ '#ff771d'],
-                        fill: {
-                          type: "gradient",
-                          gradient: {
-                            shadeIntensity: 1,
-                            opacityFrom: 0.3,
-                            opacityTo: 0.4,
-                            stops: [0, 90, 100]
-                          }
-                        },
-                        dataLabels: {
-                          enabled: false
-                        },
-                        stroke: {
-                          curve: 'smooth',
-                          width: 1
-                        },
-                
-                        tooltip: {
-                          x: {
-                            format: 'dd/MM/yy HH:mm'
-                          },
-                        }
-                      }).render();
-                    });
-                  </script>
-                  <!-- End Line Chart -->
-                </div>
-              </div>
-            </div><!-- End Reports -->
+							<!-- car box  2-->
+							<div class="CarBox mt-2">
+								<div class="carPhoto">
+									<img src="assets/img/Img (1).png" alt="" />
+								</div>
+								<div class="carText">
+									<p>Used 2010 BMW X3 <br />Sport package</p>
+								</div>
+								<div class="carViews ms-auto">
+									<div class="MoreViews me-4">
+										<h4>13,890</h4>
+										<p>Views</p>
+									</div>
+									<div class="MoreViews me-3">
+										<h4>12,7k</h4>
+										<p>Last Bid</p>
+									</div>
+								</div>
+							</div>
+							<!-- car box  -->
 
-            <div class="col-lg-6 ">
-              <!-- performance -->
-              <div class="performance">
-                  <div>
-                    <p class="AuctionsP">Auctions performance</p>
-                </div>
-        
-                  <div class="ms-auto">
-                  <img src="assets/img/3.png" alt="" class="me-1"> <span class="Last7">Last 7 days</span>
-                  </div>
-              </div>
-              <!-- performance -->
+							<!-- car box  3-->
+							<div class="CarBox mt-2">
+								<div class="carPhoto">
+									<img src="assets/img/Img (2).png" alt="" />
+								</div>
+								<div class="carText">
+									<p>2016 Toyota <br />BRZ</p>
+								</div>
+								<div class="carViews ms-auto">
+									<div class="MoreViews me-4">
+										<h4>13,890</h4>
+										<p>Views</p>
+									</div>
+									<div class="MoreViews me-3">
+										<h4>12,7k</h4>
+										<p>Last Bid</p>
+									</div>
+								</div>
+							</div>
+							<!-- car box 3 -->
+						</div>
+					</div>
 
-              <div class="CarBoxes">  
+					<!-- <hr class="Hr" /> -->
+				</div>
+			</section>
+			<!-- End Right side columns -->
+			<!-- End News & Updates -->
 
-                  <!-- car box  1-->
-                  <div class="CarBox">
-                      <div class="carPhoto">
-                        <img src="assets/img/Img.png" alt="">
-                      </div>
-                      <div class="carText">
-                          <p>2013 Subaru Forester <br> Premium Plus</p>
-                      </div>
-                      <div class="carViews ms-auto">
-                          <div class="MoreViews me-4">
-                              <h4>12,600</h4>
-                              <p>Views</p>
-                          </div>
-                          <div class="MoreViews me-3">
-                            <h4>12,6k</h4>
-                            <p>Last Bid</p>
-                        </div>
-                      </div>
-                  </div>
-                  <!-- car box  -->
+			<section class="pt-5">
+				<div class="DateSection">
+					<div class="row g-5">
+						<div class="col-lg-6">
+							<!-- performance -->
+							<div class="performance">
+								<div>
+									<p class="AuctionsP">Upcoming auctions</p>
+								</div>
 
-                        <!-- car box  2-->
-                        <div class="CarBox mt-2">
-                          <div class="carPhoto">
-                            <img src="assets/img/Img (1).png" alt="">
-                          </div>
-                          <div class="carText">
-                              <p>Used 2010 BMW X3  <br>Sport package</p>
-                          </div>
-                          <div class="carViews ms-auto">
-                              <div class="MoreViews me-4">
-                                  <h4>13,890</h4>
-                                  <p>Views</p>
-                              </div>
-                              <div class="MoreViews me-3">
-                                <h4>12,7k</h4>
-                                <p>Last Bid</p>
-                            </div>
-                          </div>
-                      </div>
-                      <!-- car box  -->
-                  
-                        <!-- car box  3-->
-                        <div class="CarBox mt-2">
-                          <div class="carPhoto">
-                            <img src="assets/img/Img (2).png" alt="">
-                          </div>
-                          <div class="carText">
-                              <p>2016 Toyota
-                                  <br>BRZ</p>
-                          </div>
-                          <div class="carViews ms-auto">
-                              <div class="MoreViews me-4">
-                                  <h4>13,890</h4>
-                                  <p>Views</p>
-                              </div>
-                              <div class="MoreViews me-3">
-                                <h4>12,7k</h4>
-                                <p>Last Bid</p>
-                            </div>
-                          </div>
-                      </div>
-                      <!-- car box 3 -->
-              </div>
-          </div>
+								<div class="ms-auto">
+									<img src="assets/img/3.png" alt="" /> <span class="Last7">January</span>
+								</div>
+							</div>
+							<!-- performance -->
 
-            <hr class="Hr">
-            </div>
-          </div><!-- End News & Updates -->
-        </div><!-- End Right side columns -->
-      </div>
-    </section>
+							<div class="CarBoxes">
+								<!-- car box  1-->
+								<div class="CarBox">
+									<div class="carPhoto1">
+										<img src="assets/img/Icon.png" alt="" />
+									</div>
+									<div class="carText">
+										<p>14 January 2021 <br /><span class="Day">Monday</span></p>
+									</div>
+									<div class="carViews ms-auto">
+										<div class="MoreViews me-4">
+											<h4>6</h4>
+											<p>States</p>
+										</div>
+										<div class="MoreViews me-3">
+											<h4>1,3k</h4>
+											<p>Vehicles</p>
+										</div>
+									</div>
+								</div>
+								<!-- car box  -->
 
-    <section>
-      <div class="DateSection">
-        <div class="row">
-            
-          <div class="col-lg-6 ">
-            <!-- performance -->
-            <div class="performance">
-                <div>
-                  <p class="AuctionsP">Upcoming auctions</p>
-              </div>
-      
-                <div class="ms-auto">
-                <img src="assets/img/3.png" alt="" > <span class="Last7">January</span>
-                </div>
-            </div>
-            <!-- performance -->
+								<!-- car box  2-->
+								<div class="CarBox mt-2">
+									<div class="carPhoto1">
+										<img src="assets/img/Icon.png" alt="" />
+									</div>
+									<div class="carText">
+										<p>16 January 2021 <br /><span class="Day">Monday</span></p>
+									</div>
+									<div class="carViews ms-auto">
+										<div class="MoreViews me-4">
+											<h4>8</h4>
+											<p>States</p>
+										</div>
+										<div class="MoreViews me-3">
+											<h4>2,1k</h4>
+											<p>Vehicles</p>
+										</div>
+									</div>
+								</div>
+								<!-- car box  -->
 
-            <div class="CarBoxes">  
+								<!-- car box  3-->
+								<div class="CarBox mt-2">
+									<div class="carPhoto1">
+										<img src="assets/img/Icon.png" alt="" />
+									</div>
+									<div class="carText">
+										<p>18 January 2021 <br /><span class="Day">Monday</span></p>
+									</div>
+									<div class="carViews ms-auto">
+										<div class="MoreViews me-4">
+											<h4>7</h4>
+											<p>States</p>
+										</div>
+										<div class="MoreViews me-3">
+											<h4>3,5k</h4>
+											<p>Vehicles</p>
+										</div>
+									</div>
+								</div>
+								<!-- car box 3 -->
+							</div>
+						</div>
 
-                <!-- car box  1-->
-                <div class="CarBox">
-                    <div class="carPhoto1">
-                      <img src="assets/img/Icon.png" alt="">
-                    </div>
-                    <div class="carText">
-                        <p>14 January 2021 <br><span class="Day">Monday</span></p>
-                    </div>
-                    <div class="carViews ms-auto">
-                        <div class="MoreViews me-4">
-                            <h4>6</h4>
-                            <p>States</p>
-                        </div>
-                        <div class="MoreViews me-3">
-                          <h4>1,3k</h4>
-                          <p>Vehicles</p>
-                      </div>
-                    </div>
-                </div>
-                <!-- car box  -->
+						<div class="BarGraph col-lg-6">
+							<div class="performance">
+								<div>
+									<p class="AuctionsP">Sales</p>
+								</div>
 
-                      <!-- car box  2-->
-                      <div class="CarBox mt-2">
-                        <div class="carPhoto1">
-                          <img src="assets/img/Icon.png" alt="">
-                        </div>
-                        <div class="carText">
-                            <p>16 January 2021 <br><span class="Day">Monday</span></p>
-                        </div>
-                        <div class="carViews ms-auto">
-                            <div class="MoreViews me-4">
-                                <h4>8</h4>
-                                <p>States</p>
-                            </div>
-                            <div class="MoreViews me-3">
-                              <h4>2,1k</h4>
-                              <p>Vehicles</p>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- car box  -->
-                
-                      <!-- car box  3-->
-                      <div class="CarBox mt-2">
-                        <div class="carPhoto1">
-                          <img src="assets/img/Icon.png" alt="">
-                        </div>
-                        <div class="carText">
-                            <p>18 January 2021 <br><span class="Day">Monday</span></p>
-                        </div>
-                        <div class="carViews ms-auto">
-                            <div class="MoreViews me-4">
-                                <h4>7</h4>
-                                <p>States</p>
-                            </div>
-                            <div class="MoreViews me-3">
-                              <h4>3,5k</h4>
-                              <p>Vehicles</p>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- car box 3 -->
-            </div>
-        </div>
+								<div class="ms-auto">
+									<img src="assets/img/3.png" alt="" /> <span class="Last7">Last 7 Days</span>
+								</div>
+							</div>
 
-        <div class="BarGraph col-lg-6">
-          <div class="performance">
-            <div>
-              <p class="AuctionsP">Sales</p>
-          </div>
-  
-            <div class="ms-auto">
-            <img src="assets/img/3.png" alt="" > <span class="Last7">Last 7 Days</span>
-            </div>
-        </div>
-        
-              <div class="chartBox">
-                <canvas id="myChart"></canvas>
-              </div>
+							<div class="chartBox">
+								<canvas id="myChart"></canvas>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-        </div>
+			<!-- Remove the container if you want to extend the Footer to full width. -->
+			<div class="mt-5">
+				<!-- Footer -->
+				<footer class="text-center text-lg-start text-white FooterArea">
+					<!-- Section: Links  -->
+					<section class="">
+						<div class="container text-center text-md-start mt-5">
+							<!-- Grid row -->
+							<div class="row mt-3">
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">About</h6>
+									<p>
+										<a href=""> How it works</a>
+									</p>
+									<p>
+										<a href="">Careers</a>
+									</p>
+									<p>
+										<a href="">About us</a>
+									</p>
 
-     </div>
-    </div>
-  </section>
+									<p>
+										<a href="">Media</a>
+									</p>
+								</div>
 
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="mt-5">
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Community</h6>
+									<p>
+										<a href="">Against Discrimination</a>
+									</p>
+									<p>
+										<a href="">Invite friends</a>
+									</p>
+									<p>
+										<a href="">Gift cards</a>
+									</p>
+								</div>
 
-  <!-- Footer -->
-  <footer class="text-center text-lg-start text-white FooterArea" >
+								<!-- Grid column -->
 
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold About">About</h6>
-            <p>
-              <a href=""> How it works</a>
-            </p>
-            <p>
-              <a href="">Careers</a>
-            </p>
-            <p>
-              <a href="">About us</a>
-            </p>
-           
-            <p>
-              <a href="">Media</a>
-            </p>
-          </div>
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Become seller</h6>
+									<p>
+										<a href="">Add your vehicle</a>
+									</p>
+									<p>
+										<a href="">Business account</a>
+									</p>
+									<p>
+										<a href="">Community</a>
+									</p>
 
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold About">Community</h6>
-            <p>
-              <a href="">Against Discrimination</a>
-            </p>
-            <p>
-              <a href="">Invite friends</a>
-            </p>
-            <p>
-              <a href="">Gift cards</a>
-            </p>
+									<p>
+										<a href="">Media</a>
+									</p>
+								</div>
 
-          </div>
+								<!-- Grid column -->
 
-          <!-- Grid column -->
+								<!-- Grid column -->
+								<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
+									<!-- Content -->
+									<h6 class="text-uppercase fw-bold About">Bookings support</h6>
+									<p>
+										<a href="">Updates for COVID-19</a>
+									</p>
+									<p>
+										<a href="">Help Center</a>
+									</p>
+									<p>
+										<a href="">Support</a>
+									</p>
 
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold About">Become seller</h6>
-            <p>
-              <a href="">Add your vehicle</a>
-            </p>
-            <p>
-              <a href="">Business account</a>
-            </p>
-            <p>
-              <a href="">Community</a>
-            </p>
-           
-            <p>
-              <a href="">Media</a>
-            </p>
-          </div>
+									<p>
+										<a href="">Trust & Safety</a>
+									</p>
+								</div>
 
-          <!-- Grid column -->
-      
-        
-         
-          
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 FooterText">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold About">Bookings support</h6>
-            <p>
-              <a href="">Updates for COVID-19</a>
-            </p>
-            <p>
-              <a href="">Help Center</a>
-            </p>
-            <p>
-              <a href="">Support</a>
-            </p>
-           
-            <p>
-              <a href="">Trust & Safety</a>
-            </p>
-          </div>
+								<!-- Grid column -->
+							</div>
+							<!-- Grid row -->
+						</div>
+					</section>
+					<!-- Section: Links  -->
+				</footer>
+				<!-- Copyright -->
+				<div class="FooterTextArea">
+					<div class="TermText">
+						<p>
+							<a href="" class="Privacy">Privacy Policy </a>
+							<a href="" class="Term">Term of Use</a>
+							<span class="reserved"> © 2021 All rights reserved</span>
+						</p>
+					</div>
 
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-  </footer>
-    <!-- Copyright -->
-    <div class="FooterTextArea">
-      <div class="TermText"> 
-        <p> <a href="" class="Privacy">Privacy Policy </a> <a href="" class="Term">Term of Use</a> <span class="reserved"> © 2021 All rights reserved</span></p>
-      </div>
-      
-      <div class="ms-auto">
-          <img src="assets/img/Language.png" alt="">
-           <img src="assets/img/Currency.png" alt="" class="ms-2">
-      </div>
-     </div>
-        <!-- Copyright -->
-  <!-- Footer -->
+					<div class="ms-auto">
+						<img src="assets/img/Language.png" alt="" />
+						<img src="assets/img/Currency.png" alt="" class="ms-2" />
+					</div>
+				</div>
+				<!-- Copyright -->
+				<!-- Footer -->
+			</div>
+		</main>
+		<!-- End #main -->
 
-</div>
+		<!-- overlay -->
+		<div class="overlay"></div>
+		<!-- mbl nav bar start -->
+		<nav class="mblNav">
+			<ul class="mblNav-list">
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link active">
+						<svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-1"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-2"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item">
+					<a href="#" class="mblNav-link">
+						<svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-3"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="mblNav-item sidebar-toggle-btn">
+					<a href="#" class="mblNav-link">
+						<svg class="icon icon-icon">
+							<use xlink:href="assets/img/icons.svg#icon-icon-4"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- mbl nav bar end -->
 
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  </main><!-- End #main -->
+		<script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/chart.js/chart.min.js"></script>
+		<script src="assets/vendor/echarts/echarts.min.js"></script>
+		<script src="assets/vendor/quill/quill.min.js"></script>
+		<script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+		<script src="assets/vendor/tinymce/tinymce.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- overlay -->
-  <div class="overlay"></div>
-  <!-- mbl nav bar start -->
-  <nav class="mblNav">
-    <ul class="mblNav-list">
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link active">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-1"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-2"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-3"></use></svg>
-        </a>
-      </li>
-      <li class="mblNav-item sidebar-toggle-btn">
-        <a href="#" class="mblNav-link">
-          <svg class="icon icon-icon"><use xlink:href="assets/img/icons.svg#icon-icon-4"></use></svg>
-        </a>
-      </li>
-    </ul>
-  </nav>
-    <!-- mbl nav bar end -->
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
 
+		<script>
+			const data = {
+				labels: ['Jan 15', 'Jan 16', 'Jan 17', 'Jan 18', 'Jan 19', 'Jan 20', 'Jan 21'],
+				datasets: [
+					{
+						data: [12, 6, 9, 12, 3, 9, 2],
+						backgroundColor: [
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+							'#FDECE5',
+						],
 
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+						borderRadius: 2,
+						borderSkipped: false,
+						barPercentage: 0.5,
+						categoryPercentage: 0.5,
+					},
+				],
+			};
 
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.min.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.min.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-
-<script>
-  
-  const data = {
-    labels: ['Jan 15', 'Jan 16', 'Jan 17', 'Jan 18', 'Jan 19', 'Jan 20', 'Jan 21'],
-    datasets: [{
-      data: [ 12, 6, 9, 12, 3, 9,2],
-      backgroundColor: [
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-        '#FDECE5',
-      
-      ],
-
-      borderRadius:2,
-      borderSkipped:false,
-      barPercentage: 0.50, 
-      categoryPercentage:0.5 
-    }]
-  };
-
-  // config 
-  const config = {
-    type: 'bar',
-    data,
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true, 
-          grid:{
-            borderColor:"green", 
-            borderWidth:"3",
-            drawBorder: false ,
-           drawOnChartArea:false
-
-            
-          }
-        },
-        x: {
-          grid:{
-            drawBorder: false ,
-            display:true,
-           lineWidth: 5, 
-           drawOnChartArea:false
-        }
-      }
-    },    
-    plugins: {
-      tooltip:{
-        yAlign: "bottom"
-      },
-    legend:{
-      display:false
-    }}, 
-  }
-  
-  }
-  // render init block
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-</script>
-
-</body>
-
+			// config
+			const config = {
+				type: 'bar',
+				data,
+				options: {
+					scales: {
+						y: {
+							beginAtZero: true,
+							grid: {
+								borderColor: 'green',
+								borderWidth: '3',
+								drawBorder: false,
+								drawOnChartArea: false,
+							},
+						},
+						x: {
+							grid: {
+								drawBorder: false,
+								display: true,
+								lineWidth: 5,
+								drawOnChartArea: false,
+							},
+						},
+					},
+					plugins: {
+						tooltip: {
+							yAlign: 'bottom',
+						},
+						legend: {
+							display: false,
+						},
+					},
+				},
+			};
+			// render init block
+			const myChart = new Chart(document.getElementById('myChart'), config);
+		</script>
+	</body>
 </html>
